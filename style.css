@@ -1,0 +1,381 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* g-img */
+.g-img  {
+    background-attachment: scroll;
+    
+    display: block;
+    min-height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 140%;
+    z-index: -1;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.g-img img {
+    width: 100%;
+    height: 200%;
+    overflow-clip-margin: content-box;
+    filter:brightness(35%);
+    background-image: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+header h1 {
+    text-align: left;
+    font-size: 40px;
+    color: red;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+/* form section */
+form {
+    display: flex;
+    text-align: center;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+;
+}
+.form-container {
+    padding: 48px 68px 48px 68px;
+    position: relative;
+    width: 450px;
+    background-color: rgba(0, 0, 0, 0.485);
+    height: 800px;
+}
+.form-container h1 {
+    color: aliceblue;
+    text-align: left;
+}
+.form-container input {
+    position: absolute;
+    left: 68px;
+    width: 314px;
+    margin-top: 30px;
+    color: inherit;
+}
+.form-container .inputs {
+    line-height: 1.5;
+    font-size: 1rem;
+    height: 56px;
+    padding: .5rem 1rem 0.5rem;
+    border: 1px gray solid;
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+    background-color: transparent;
+    cursor: auto;
+
+}
+.form-container .inputs:focus {
+    outline: none;
+    box-shadow: inset 0   1px 1px rgb(255,255,255), 0 0  8px rgb(255,255,255)
+}
+.form-container #submit {
+    height: 40px;
+    background-color: red;
+    border-radius: 5px;
+    border: 0 solid;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+.form-container #submit:hover {
+    background-color: darkred;
+
+}
+.form-container h4 {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(255, 255, 255, 0.725);
+    margin-top: 75px; 
+    font-weight: 500;
+}
+.form-container button {
+    margin-top: 20px;
+    text-align: center;
+    height: 40px;
+    width: 314px;
+    border-radius: 5px;
+    border: 0 solid;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    background: rgba(128, 128, 128, 0.4);
+    color: rgb(255, 255, 255);
+    transition: filter .5s;
+}
+.form-container button:hover {
+    filter: brightness(90%);
+}
+.form-container  .forget {
+    color: white;
+    cursor: pointer;
+}
+.form-container  .forget:hover {
+    color: gray;
+    text-decoration: underline;
+}
+.form-container #remember {
+    margin-top: 12px;
+    left: -76px;
+    height: 18px;
+    background-color: transparent;
+    color: black;
+    filter: brightness(40%);
+    cursor: pointer;
+    transition: filter .5s;
+}
+.form-container #remember:hover {
+    filter: brightness(100%);
+}
+.form-container label {
+    display: inline-block;
+    color: white;
+    margin-right: 136px;
+    margin-top: 8px;
+}
+.form-container p {
+    color: rgb(171, 168, 168);
+    margin-right: 195px;
+}
+.form-container .lasts {
+    position: absolute;
+    bottom: 243px;
+    right: 168px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+.form-container .lasts:hover {
+    text-decoration: underline;
+}
+.form-container h5 {
+    font-weight: 500;
+    text-align: left;
+    color: gray;
+}
+.form-container a {
+    position: absolute;
+    bottom: 164px;
+    left: 212px;
+    text-decoration: none;
+    font-weight: inherit;
+    font-size: 14px;
+    color: rgb(32, 71, 226);
+}
+.form-container a:hover {
+    text-decoration: underline;
+}
+/* Footer Secton */
+footer {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+    background-color: rgba(0, 0, 0, 0.485);
+    z-index: 1;
+}
+footer p {
+    color: white;
+    display: inline;
+    float: left;
+    padding-left: 5%;
+    cursor: pointer;
+}
+footer p:hover {
+    text-decoration: underline;
+}
+#Rac {
+    width: 100px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    margin-left: 60px
+}
+.DEV {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    padding-bottom: 10px;
+    background-color: black;
+    color: white;
+}
+.DEV img {
+    position: absolute;
+    width: 80px;
+    height: 100%;
+    left: 60%;
+    opacity: .5;
+    transition: opacity  .2s ease-in-out;
+}
+.DEV img:hover{
+    opacity: 1;
+}
+.DEV span {
+    position: absolute;
+    left: 35%;
+    top: 30%;
+}
+/* media query */
+@media screen and (max-width:1024px) {
+    .g-img {
+        height: 180%
+    }
+    .DEV img {
+        position: absolute;
+        left: 71%;
+    }
+    #Rac {
+        position: relative;
+        left: 40%;
+    }
+    .cor {
+        position: absolute;
+        top: 41%;
+        left: 9%;
+    }
+} /* Tablet landscape */
+@media screen and (max-width:768px) {
+    .g-img {
+        width: 100%;
+        height: 236%;
+    }
+    footer p {
+        font-size: 15px;
+    }
+    .pri {
+        position: absolute;
+        left: 9%;
+        top: 30%;
+    }
+    .DEV {
+        width: 100%;
+    }
+    .DEV span {
+        position: absolute;
+        left: 25%;
+    }
+}
+/* Mobile Lanscip */
+@media screen and (max-width:501px) {
+    * {
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        background-image: none;
+        background-color: black;
+    }
+    body {
+        width: 500px;
+        margin: auto;
+        height: 503px;
+        background-color: black;
+        background-image: none;
+    }
+    .g-img img {
+        filter: brightness(0);
+        height: 503px;
+    }
+    header h1 {
+        margin-left: 60px;
+    }
+    footer {
+        position: relative;
+    }
+    .lasts {
+        position: absolute;
+    bottom: 243px;
+    right: 168px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    }
+    .form-container a {
+    position: absolute;
+    bottom: 164px;
+    left: 212px;
+    text-decoration: none;
+    font-weight: inherit;
+    font-size: 14px;
+    color: rgb(32, 71, 226);
+    }
+    .question {
+        position: absolute;
+        left: 22%;
+        top: -50%;
+    }
+    .fac {
+        position: absolute;
+        left: 22%;
+        top: -30%;
+    } 
+    .cook {
+        position: absolute;
+        left: 22%;
+        top: -10%;
+    }
+    .help {
+        position: absolute;
+        left: 22%;
+        top: 15%;
+    }
+    .team {
+        position: absolute;
+        left: 65%;
+        top: -30%;
+    }
+    .pri {
+        position: absolute;
+        left: 65%;
+        top: -10%;
+    }
+    .cor {
+        position: absolute;
+        left: 22%;
+    }
+    footer hr {
+        width: 500px;
+        height: 2px;
+        background-color: #c6d
+    }
+    #Rac {
+        margin-left: 115px;
+        margin-bottom: 5px;
+    }
+    .DEV span {
+        position: absolute;
+        margin-right: 100px;
+        left: 118px;
+        line-height: 2.9;
+        font-size: 16px;
+    }
+    .DEV img {
+        position: absolute;
+        top: 60px;
+        left: 46%;
+        border-radius: 5px;
+        transition: opacity  .3s ease-in-out;
+    }
+    .DEV img:focus {
+        opacity: 1;
+    }
+}
